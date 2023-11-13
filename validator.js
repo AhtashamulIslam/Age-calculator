@@ -17,7 +17,6 @@ let isValid=true
 const calculateAge = document.querySelector('#press')
 
 calculateAge.addEventListener('click',function(e){
-    e.preventDefault()
     validateAge()
 })
  
