@@ -1,0 +1,120 @@
+body{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background:#f3f2f1;
+    font-family: 'Poppins'
+}
+.container{
+    background: white;
+    padding:2em;
+    width:50%;
+    border-radius: 1em;
+    border-bottom-right-radius: 7em;
+    margin:10% auto 0;
+}
+#input-area{
+    display: flex;
+    justify-content: flex-start;
+    gap:1.5em;
+}
+
+.line-svg,.finalblock,.dashdiv{
+    display: flex;
+    align-items: center;
+
+}
+.col+.col{
+    margin-left:.4em;
+}
+.dashdiv{
+    font-size:3rem;
+    color: hsl(259, 100%, 65%);
+    font-style: italic;
+}
+.bigfonts{
+    font-size:3rem;
+    margin-left:.5em;
+    font-style: italic;
+}
+.divider{
+    width:100%;
+    height:2px;
+    background: hsl(0, 0%, 86%);
+    margin:auto 0;
+}
+svg{
+    background: hsl(259, 100%, 65%);
+    border-radius:50%;
+}
+
+input{
+    width:7em;
+    padding:1em;
+    margin-top:.35em;
+    font-size: 1rem;
+    font-weight: bolder;
+    border:2px solid hsl(0, 0%, 86%);
+    background: white;
+    border-radius: .5em;
+    color:hsl(0, 1%, 44%);
+    size:1.5rem;
+    outline:none;
+    transition: all .5s;
+}
+input[type=text]:focus{
+    border:2px solid hsl(259, 100%, 65%);
+    opacity:.6;
+    -webkit-transition: all .5s;
+    
+}
+label{
+    font-size:.65rem;
+    color:hsl(0, 1%, 44%);
+    letter-spacing: .025em;
+}
+.dash{
+    height:.5rem;
+    width:1.25rem;
+    background: hsl(259, 100%, 65%);
+}
+.error input{
+    border:2px solid hsl(0, 100%, 67%);
+    transition:all .25s
+}
+.error small{
+    color:hsl(0, 100%, 67%);
+    opacity:.8;
+    font-style:italic;
+    transition:all .25s
+}
+.error label{
+    color: hsl(0, 100%, 67%);
+    transition:all .25s
+}
+@media (max-width:900px){
+   .input-area{
+       justify-content: center;
+   }
+   
+    .line-svg{
+        margin-top:2em;
+        text-align:center;
+        position: relative;
+    }
+    svg{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%)
+    }
+    input{
+        width:2em;
+    }
+    .bigfonts{
+        font-size: 2rem;
+    }
+    .calculated-field{
+        margin-top:1.5em;
+    }
+}

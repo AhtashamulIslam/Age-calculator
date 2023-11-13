@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Lora&family=Montserrat:wght@500;700&family=Orbitron&family=Pacifico&family=Playfair+Display:wght@400;900&family=Poppins:ital,wght@0,700;1,700&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+  <div id="input-area">
+    <div class="day-input ">
+    <label for="day" id="daylabel"><strong>DAY</strong></label><br>
+    <input type="text" name="day" id="din" value="DD" onfocus="if(this.value == 'DD') { this.value = ''; }" onblur="if(this.value=='')this.value='DD'" required="This Field Is Required"/><br>
+    <small></small>
+    </div>
+    <div class="month-input ">
+    <label for="month" id="monthlabel"><strong>MONTH</strong></label><br>
+    <input type="text" name="month" id="min" value="MM" onfocus="if(this.value == 'MM') { this.value = ''; }" onblur="if(this.value=='')this.value='MM'" required="This Field Is Required"/><br>
+    <small></small>
+    </div>
+    <div class="year-input ">
+    <label for="year" id="yearlabel"><strong>YEARS</strong></label><br>
+    <input type="text" name="year" id="yin" value="YYYY" onfocus="if(this.value == 'YYYY') { this.value = ''; }" onblur="if(this.value=='')this.value='YYYY'" required="This Field Is Required"/><br>
+    <small></small>
+    </div>
+  </div>
+  
+  <div class="line-svg">
+  <div class="divider"></div>
+  
+  <svg id="press" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+  </div>
+  <div class="calculated-field">
+    <div id="yearfinal" class="finalblock">
+      <div id="calcyear" class="dashdiv"><div class="dash col"></div><div class="dash col"></div></div>
+      <div class="bigfonts">years</div>
+    </div>
+    <div id="monthfinal" class="finalblock">
+      <div id="calcmonth" class="dashdiv"><div class="dash col"></div><div class="dash col"></div></div>
+      <div class="bigfonts">months</div>
+    </div>
+    <div id="dayfinal" class="finalblock">
+      <div id="calcday" class="dashdiv"><div class="dash col"></div><div class="dash col"></div></div>
+      <div class="bigfonts">days</div>
+    </div>
+  </div>
+  </div>
+  <script src="./moment.js"></script>
+  <script src="./validator.js">
+</body>
+</html>
